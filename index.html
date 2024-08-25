@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Encripador de texto</title>
+    
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img class="logo" src="./imagenes/logo.svg" alt="Logo Alura" width="200" height="50">
+
+    </header>
+
+    <!-- Principal-->
+    <main>
+        <section class="encriptador">            
+            <textarea class="encriptar" placeholder="Ingrese el texto aquí" ></textarea>                
+            <div class="encriptador-aviso">
+                <img class="img-aviso" src="./imagenes/aviso.svg" alt="Imagen Aviso">
+                <p class="texto-aviso" aria-live="polite">Solo letras minúsculas y sin acentos</p>
+            </div>            
+            <div class="encriptador-contenedor">
+                <button class="btn-encriptar" type="button">Encriptar</button>
+                <button class="btn-desencriptar" type="button">Desencriptar</button>
+            </div>
+        </section>
+        <section class="tarjeta">
+            <div class="tarjeta-contenedor">
+                <img class="img-muñeco" src="./imagenes/muñeco.svg" alt="Imagen Muñeco">
+                <p class="texto-uno">Ningún	mensaje fue encontrado</p>
+                <p class="texto-dos">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea class="evaluar" name="mensaje" readonly></textarea>
+            <button class="btn-copiar" type="button">Copiar</button>
+            <div id="mensaje-copiado" class="mensaje-copiado">Texto copiado al portapapeles!</div>           
+        </section>
+    </main>
+    <!--Pie de página-->
+    <footer>
+        <p class="copyright">&copy; copyright 2024 - Encripador de Texto - Desarrollado por Luis E. García</p>
+        <a href="https://www.linkedin.com/in/luise-garcía" target="_blank" rel="noopener noreferrer">
+            <img class="linkedin" src="./imagenes/linkedin.svg" alt="LinkedIn de Luis E. García">
+        </a>
+        <a href="https://github.com/legarcia1993" target="_blank" rel="noopener noreferrer">
+            <img class="github" src="./imagenes/github.svg" alt="GitHub de Luis E. García">
+        </a>
+        
+    </footer>
+
+    <script src="./js/encriptador.js"></script>
+</body>
+
+</html>
